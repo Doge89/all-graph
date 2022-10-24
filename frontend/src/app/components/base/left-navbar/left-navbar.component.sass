@@ -1,0 +1,15 @@
+@import "../../../../sass/vars"
+@import "../../../../sass/mixies"
+
+.left-navbar
+  max-width: 150px
+  min-height: 100vh
+  width: $full-vw-vh
+  background-color: $main-color
+  @include set_flex($align-items: center, $flex-flow: column nowrap)
+
+.img-logo
+  width: 100px
+  img
+    width: 100%
+    object-fit: contain

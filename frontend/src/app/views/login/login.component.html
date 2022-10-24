@@ -1,0 +1,43 @@
+<div class="wrapper-form flex-row">
+  <div class="form half-width">
+    <div class="form-width">
+      <form class="w-full form-flex" (submit)="handleSubmit($event);">
+        <div class="header-form">
+          <h1 class="roboto-text">Inicia sesión</h1>
+        </div>
+        <div class="form-field">
+          <label class="form-label">Usuario</label>
+          <input class="input-field" type="text" name="username" [(ngModel)]="username" />
+        </div>
+        <div class="form-field">
+          <label class="form-label roboto-text">Contraseña</label>
+          <input class="input-field" type="password" name="password" [(ngModel)]="password" />
+        </div>
+        <div class="form-misc">
+          <div class="form-field-misc">
+            <input name="remember" type="checkbox" value="Recordar por 30 días">
+            <label for="remember" class="label-misc roboto-text">Recordar por 30 días</label>
+          </div>
+          <a href="#" class="label-misc roboto-text">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="form-field submit">
+          <input class="submit-form roboto-text" type="submit" value="Ingresar" />
+        </div>
+        <div class="form-field submit">
+          <a href="#" class="roboto-text blue-300">¿No tienes cuenta? Registrate</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="img-content half-width">
+    <div class="black-background"></div>
+    <div class="desc">
+      <div class="header">
+        <h1 class="main-header roboto-text">AllGraph</h1>
+      </div>
+      <div class="content roboto-text">
+        <p>Visualiza tus datos donde quieras que estes</p>
+      </div>
+    </div>
+  </div>
+</div>

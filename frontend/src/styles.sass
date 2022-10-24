@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./sass/vars"
+@import "./sass/mixies"
+@imp
+
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@font-face
+  font-family: "Roboto"
+  src: url('assets/fonts/Roboto-Regular.ttf') format('truetype')
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+
+body
+  width: 100%
+  min-height: 100vh
+
+#app
+  width: 100%
+  min-height: 100vh
+
+@layer utilities
+
+  .blue-300
+    color: #6DB7D9
+
+  .blue-500
+    color: #005980
+
+  .wrapper-form
+    width: $full-vw-vh
+    min-height: 100vh
+    @include set_flex($justify: center, $align-items: center)
+
+  .form
+    width: 300px
+    @include set_flex($justify: center, $align-items: center ,$flex-flow: column nowrap)
+
+  .form-flex
+    gap: 20px
+    width: 100%
+    @include set_flex($flex-flow: column nowrap)
+
+  .half-width
+    width: 50%
+
+  .form-label
+    font-size: 16px
+    font-weight: 700
+
+  .form-width
+    width: 300px
+
+  .form-field
+    gap: 10px
+    width: 100%
+    @include set_flex($justify: center, $flex-flow: column nowrap)
+
+    &.submit
+      align-items: center
+
+  .form-field-misc
+    gap: 10px
+    @include set_flex($justify: center, $align-items: center)
+
+  .form-misc
+    width: $full-vw-vh
+    font-weight: 600
+    @include set_flex($justify: space-between)
+
+  .label-misc
+    font-size: 12px
+    font-weight: 600
+
+  .submit-form
+    width: 200px
+    padding: 10px
+    outline: none
+    cursor: pointer
+    border: 1px solid #999
+    border-radius: $input-radius
+    transition: all 0.2s
+    background-color: #FFF
+
+    &:hover
+      transition: all 0.2s
+      background-color: #EFEFEF
+
+  .input-field
+    color: #777
+    padding: 10px 5px
+    font-size: 14px
+    border-radius: 5px
+    letter-spacing: 0.01em
+    border: 1px solid #ccc
+    width: 300px
+
+  .img-content
+    min-height: 100vh
+    position: relative
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-image: url('assets/images/common/nomanssky.jpg') //Change img
+    @include set_flex($align-items: flex-start, $justify: flex-start)
+
+  .main-header
+    font-size: 50px
+    word-spacing: 0.01em
+    letter-spacing: 0.02em
+    color: white
+    font-weight: bold
+
+  .roboto-text
+    font-family: "Roboto"
+
+  .p-10px
+    padding: 10px
+
+  .left-boxshadow
+    box-shadow: 1px 0px 5px 5px $faded-black
+
